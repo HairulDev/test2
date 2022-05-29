@@ -9,8 +9,8 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export const fetchPost = (id) => API.get(`/users/${id}`);
-export const updatePost = (id, updatedPost) => API.patch(`/users/${id}`, updatedPost);
+export const fetchUser = (id) => API.get(`/users/${id}`);
+export const updateUser = (id, updateUser) => API.patch(`/users/${id}`, updateUser);
 
 export const signIn = (formData) => API.post('/user/signin', formData);
 export const signUp = (formData) => API.post('/user/signup', formData);

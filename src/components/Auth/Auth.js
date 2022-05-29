@@ -15,7 +15,6 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
-
   const switchMode = () => {
     setForm(initialState);
     setIsSignup((prevIsSignup) => !prevIsSignup);

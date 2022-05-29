@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {Avatar } from '@material-ui/core';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
 import decode from 'jwt-decode';
 
 import * as actionType from '../../constants/actionTypes';

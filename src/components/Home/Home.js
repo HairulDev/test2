@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 const Home = () => {
-  const { posts, isLoading } = useSelector((state) => state.posts);
-
   const user = JSON.parse(localStorage.getItem('profile'));
   const history = useHistory();
 
-  if (!posts.length && !isLoading) return 'No posts';
-
   return (
-
       <div className="col-md-12 mb-2">
         <div className="card">
           <div className="card-body text-center">
